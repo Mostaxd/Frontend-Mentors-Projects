@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="h-full w-full m-0 p-0 overflow-x-hidden">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,10 +19,10 @@
 <header>
   <div class="container flex flex-row items-center justify-between mt-3">
     <div class="logo">
-      <img src="../images/logo.svg" alt="logo" class="ml-2">
+      <img src="../images/logo.svg" alt="logo" class="ml-2 min-w-min">
     </div>
-    <nav>
-      <ul class="flex flex-row space-x-4 p-4   -100 rounded-lg">
+    <nav class="flex">
+      <ul class="flex flex-row space-x-4 p-4 rounded-lg invisible sm:visible ">
         <li><a href="#">Product</a></li>
         <li><a href="#">Pricing</a></li>
         <li><a href="#">About Us</a></li>
@@ -30,19 +30,25 @@
         <li><a href="#">Community</a></li>
       </ul>
     </nav>
-    <div class="btn">
-      <a href="#">Get Started</a>
+    <div class="btn  ">
+      <button href="#" class="text-2xl font-bold mt-4 m-w-10 text-center max-w-5 hidden sm:flex 
+      bg-bright-red hover:bg-very-pale-red text-white text-sm px-2 py-2  border rounded-full min-w-min">
+      Get Started
+    </button>
+    <div class="hamburger flex sm:hidden">
+      <img src="../images/icon-hamburger.svg" alt="hamburger" class="ml-2 min-w-min">
     </div>
   </div>
+    </div>
 </header>
 <!-- NAVGIATION END -->
 
 
 
 <!-- HERO START -->
-<body class="mx-2">
-  <section>
-    <div class="container grid grid-cols-2 gap-4">
+<body class="h-full w-full m-0 p-0 overflow-x-hidden">
+  <section class="p-4  ">
+    <div class="container sm:grid sm:grid-cols-2 sm:gap-4">
       <div class="flex flex-col items-center justify-center">
         <div class="text-center">
           <h1 class="text-4xl font-bold">Bring everyone together to build better products.</h1>
@@ -50,7 +56,8 @@
             tasks while keeping the larger team goals in view.</p>
         </div>
         <div class="btn mt-8">
-          <a href="#">Get Started</a>
+          <a href="#" class="text-2xl font-bold mt-4 m-w-10 text-center max-w-5
+          bg-bright-red hover:bg-very-pale-red text-white text-sm px-2 py-2  border rounded-full">Get Started</a>
         </div>
       </div>
 
@@ -62,10 +69,10 @@
 
 
   <!-- FEATURES START -->
-  <section class="mt-5">
-    <div class="container grid grid-cols-2 gap-4">
-      <div class="flex flex-col items-center justify-center">
-        <div class="text-center">
+  <section class="mt-5 p-4">
+    <div class="container sm:grid sm:grid-cols-2 sm:gap-4 ">
+      <div class="flex flex-col items-center ">
+        <div class="">
           <h1 class="text-4xl font-bold">What’s different about Manage?</h1>
           <p class="text-lg mt>4">Manage provides all the functionality your team needs, without 
             the complexity. Our software is tailor-made for modern digital 
@@ -75,35 +82,72 @@
 
       <div class="flex flex-col items-center justify-center">
         <div class="flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold mt-4">Track company-wide progress</h1>
-          <p class="text-lg mt-4">
-            See how your day-to-day tasks fit into the wider vision. Go from 
-            tracking progress at the milestone level all the way done to the 
-            smallest of details. Never lose sight of the bigger picture again.
-          </p>
+          
+          <div class="grid grid-cols-5 gap-0">
+            <div class="feature-num-1 col-span-1">
+              <div class="flex justify-center" >
+                <h1  class="text-2xl font-bold mt-4 text-center w-20
+                bg-bright-red hover:bg-very-pale-red text-white text-sm px-2 py-2 border rounded-full">
+                  01
+                </h1>
+              </div>
+            </div>
+            <div class="feature-1 col-span-4">
+              <h1 class="text-2xl font-bold mt-4">Track company-wide progress</h1>
+              <p class="text-lg mt-4">
+                See how your day-to-day tasks fit into the wider vision. Go from 
+                tracking progress at the milestone level all the way done to the 
+                smallest of details. Never lose sight of the bigger picture again.
+              </p>
+            </div>
+          </div>
         </div>
+
         <div class="flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold mt-4">Advanced built-in reports</h1>
-          <p class="text-lg mt>4">
-            Set internal delivery estimates and track progress toward company 
-            goals. Our customisable dashboard helps you build out the reports 
-            you need to keep key stakeholders informed.
-          </p>
+          <div class="grid grid-cols-5 gap-0">
+            <div class="feature-num-2 col-span-1">
+              <div class="flex justify-center" >
+                <h1  class="text-2xl font-bold mt-4 text-center w-20
+                bg-bright-red hover:bg-very-pale-red text-white text-sm px-2 py-2 border rounded-full">
+                  02
+                </h1>
+              </div>
+            </div>
+            <div class="feature-2 col-span-4">
+              <h1 class="text-2xl font-bold mt-4">Advanced built-in reports</h1>
+              <p class="text-lg mt-4">
+                Set internal delivery estimates and track progress toward company 
+                goals. Our customisable dashboard helps you build out the reports 
+                you need to keep key stakeholders informed.
+              </p>
+            </div>
         </div>
+
         <div class="flex flex-col items-center justify-center">
-          <h1 class="text-2xl font-bold mt-4"> Everything you need in one place</h1>
-          <p class="text-lg mt>4">
-            Stop jumping from one service to another to communicate, store files, 
-            track tasks and share documents. Manage offers an all-in-one team 
-            productivity solution.
-          </p>
-        </div>
+          <div class="grid grid-cols-5 gap-0">
+            <div class="feature-num-3 col-span-1">
+              <div class="flex justify-center" >
+                <h1  class="text-2xl font-bold mt-4 text-center w-20
+                bg-bright-red hover:bg-very-pale-red text-white text-sm px-2 py-2 border rounded-full">
+                  03
+                </h1>
+              </div>
+            </div>
+            <div class="feature-3 col-span-4">
+              <h1 class="text-2xl font-bold mt-4">Everything you need in one place</h1>
+              <p class="text-lg mt-4">
+                Stop jumping from one service to another to communicate, store 
+                files, track tasks and share documents. Manage offers an 
+                all-in-one team productivity solution.
+              </p>
+            </div>
+          </div>
       </div>
   </section>
     <!-- FEATURES END -->
 
   <!-- REVIEWS START -->
-  <section>
+  <section class="p-4">
     <h1 class="text-2xl font-bold text-center my-5">What they've said</h1>
     <div class="container grid grid-cols-3 gap-4">
       <div class="review-1">
@@ -132,32 +176,34 @@
       </div>
     </div>
     <div class="btn mt-8 text-center">
-      <a href="#">Get Started</a>
+      <a href="#" class="text-2xl font-bold mt-4 m-w-10 text-center max-w-5
+      bg-orange-600 hover:bg-red-500 text-white text-sm px-2 py-2  border rounded-full">Get Started</a>
     </div>
   </section>
     <!-- REVIEWS END -->
 
   <!-- AD START -->
-  <section class="my-10">
-    <div class="ad grid grid-cols-2 gap-4 my-4 items-center justify-center text-center">
+  <section class="my-10 p-4">
+    <div class="ad grid grid-cols-2 gap-4 my-4 items-center justify-center text-center ">
       <h1>Simplify how your team works today.</h1>
       <button>Get Started</button>
     </div>
   </section>
   <!-- AD END -->
+</body>
 
   <!-- FOOTER START -->
-  <footer class="footer my-5">
-    <div class="container grid grid-cols-4 gap-4 mt-5">
+  <footer class="footer text-sm text-white p-4 bg-very-dark-blue m-w-full  shadow md:flex md:items-center md:justify-between md:p-6">
+    <div class="container grid grid-cols-4 gap-4 mt-5 ">
     <div class="links">
       <div class="logo">
-        <img src="../images/logo.svg" alt="logo" class="ml-2">
+        <img src="../images/logo.svg" alt="logo" class="ml-1 fill-blue-500" >
       </div>
       <br>
       <br>
-      <div class="social-media flex flex-row">
+      <div class="social-media flex flex-row space-x-2">
         <a href="#"><img src="../images/icon-facebook.svg" alt="facebook"></a>
-        <a href="#"><img src="../images/icon-facebook.svg" alt="twitter"></a>
+        <a href="#"><img src="../images/icon-youtube.svg" alt="twitter"></a>
         <a href="#"><img src="../images/icon-twitter.svg" alt="pinterest"></a>
         <a href="#"><img src="../images/icon-instagram.svg" alt="instagram"></a>
       </div>
@@ -181,21 +227,15 @@
     </div>
 
     <div class="inbox">
-      <input type="text" placeholder="Updates in your inbox…"/>
+      <div class="input flex w-full">
+        <input type="text" placeholder="Updates in your inbox…"/>
+      </div>
       <button>Go</button>
       <br>
       <br>
       <p>Copyright 2020. All Rights Reserved</p>
     </div>
-  
 </div>
 </footer>
   <!-- FOOTER END -->
-
-  
-  <div class="attribution mb-1">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Mostafa Ahmed</a>.
-  </div>
-</body>
 </html>
